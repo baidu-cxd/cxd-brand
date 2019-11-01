@@ -1,0 +1,17 @@
+{
+  "name": "d-web",
+  "version": "0.0.1",
+  "description": "dz开发的web应用框架",
+  "main": "index.js",
+  "scripts": {
+    "server": "bash sh/startserver.sh",
+    "client-portal": "bash sh/startclientportal.sh",
+    "dev": "concurrently \"npm:server\" \"npm:client-portal\"",
+    "yarn": "bash sh/yarn.sh"
+  },
+  "author": "dz",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.0.0"
+  }
+}
