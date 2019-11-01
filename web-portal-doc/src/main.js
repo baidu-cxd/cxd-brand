@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import qs from 'qs'
-import '@.style/index.styl' //设计系统样式
+import '@/style/index.styl' //设计系统样式
 import components from '@/utils/components.js' //加载默认组件
 Vue.use(components) // 加载自定义组件
 Vue.config.productionTip = false

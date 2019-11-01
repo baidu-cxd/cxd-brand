@@ -1,5 +1,7 @@
-import Test from '@/components/base/Test' 
+import ScrollListener from '@/components/base/ScrollListener.vue' 
+import YsHeader from '@/components/common/YsHeader.vue' 
 
 export default (Vue)=>{
-  Vue.component("Test", Test)
+  Vue.component("ScrollListener", ScrollListener)
+  Vue.component("YsHeader", YsHeader)
 }
