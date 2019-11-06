@@ -1,15 +1,29 @@
 // 样式变量
 :root
   --color-brand: #2468f2
-  --color-base-black: #191C3D
+  --color-base: #191C3D
+  --color-bg-light: #f6f8fb
+  --color-bg-light-2: #cad0db
   --color-bg-base: #fff
   --color-bg-brand: #2468f2
   --color-border: #ebebeb
+  --shadow: 0 0px 10px rgba(0,0,0,.08)
+// 样式引用
+@import './layout.styl' 
 // reset
 html
   font-size 16px
 html, body
   padding 0
   margin 0
-div
+h1, h2, h3, h4, h5, p, a, span, div 
+  font-family: Avenir, "PingFang SC", "SF Pro SC","SF Pro Text","Helvetica Neue",  Helvetica,  Roboto, 'Arial','microsoft yahei ui',"Microsoft YaHei",SimSun, sans-serif;
+  -moz-osx-font-smoothing: grayscale;  
+  -webkit-font-smoothing: antialiased; 
+  font-weight normal
+  line-height 1.5
+div, a
   box-sizing border-box
+a
+  text-decoration none
+  font-size $normal-text

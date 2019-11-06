@@ -1,0 +1,17 @@
+[
+  {
+    "type": "index",
+    "url": "",
+    "children": {
+      "brand": "百度云品牌规范",
+      "portal": "百度云portal端设计规范"
+    } 
+  },
+  {
+    "type": "inner",
+    "url": "/brand",
+    "children": {
+      "color": "颜 色"
+    } 
+  }
+]
