@@ -6,14 +6,18 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     scroll: 0 ,
-    headerTip: false
+    headerTip: false,
+    pageData: null
   },
   mutations: {
     scroll (state, n) {
       state.scroll = n
     },
-    toggleHeaderTip () {
+    toggleHeaderTip() {
       state.headerTip = !state.headerTip
+    },
+    changePageData(state, n) {
+      state.pageData = n
     }
   },
   actions: {

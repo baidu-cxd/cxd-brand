@@ -1,13 +1,18 @@
 <template>
     <router-link 
       class = "ys-link-item"
-      :to='link'>
-      {{item}}
+      :to='link' @click.native="changePageData()">
+      {{item.text || item}}
     </router-link>
 </template>
 <script>
 export default {
-  props:['link','item']
+  props: ['link','item'],
+  methods: {
+    changePageData(){
+      this.$store.commit('changePageData', this.item)
+    }
+  }
 }
 </script>
 <style lang="stylus">

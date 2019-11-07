@@ -15,5 +15,8 @@ export default {
 </script>
 <style lang="stylus">
 .ys-left-nav
-  padding 0
+  position absolute
+  top 0
+  left 0
+  padding-top 1rem
 </style>

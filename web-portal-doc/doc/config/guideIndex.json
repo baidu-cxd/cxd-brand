@@ -4,7 +4,7 @@
     "url": "/",
     "children": {
       "brand": "百度云品牌规范",
-      "resource": "控制台设计语言"
+      "components": "云设-组件库"
     } 
   },
   {
@@ -17,6 +17,15 @@
       "picture": "场景插画",
       "animation": "动效设计",
       "web": "网页端设计"
+    } 
+  },
+  {
+    "type": "inner",
+    "url": "/components/",
+    "children": {
+      "layout": "布局",
+      "right-fix": { "text" : "右侧组件" , "component": "rightFix"},
+      "token": "设计变量"
     } 
   }
 ]
