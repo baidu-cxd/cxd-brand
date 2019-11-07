@@ -3,7 +3,7 @@
     <!--导航组-->
     <YsLeftNavGroup 
       v-for='(item,i) in list' 
-      :key="i" :list='item.children' :url='url + item.url + "/"'/>
+      :key="i" :list='item.children' :url='url + item.url'/>
   </div>
 </template>
 <script>

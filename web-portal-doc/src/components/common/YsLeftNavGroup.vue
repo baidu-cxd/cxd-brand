@@ -2,27 +2,21 @@
   <div class="ya-left-nav-group">
     <!--普通单元-->
     <div class="item" v-for="(item,i) in list" :key="i">
-      <router-link 
-        class = "ys-link-item"
-        :to='url + i' v-if="!item.children">
-        {{item}}
-      </router-link>
+      <YsLinkItem v-if="!item.children" :link="url + i" :item="item"/>
     </div>
   </div>
 </template>
 <script>
+import YsLinkItem from './YsLinkItem.vue'
 export default {
-  props:['list', 'url']
+  props:['list', 'url'],
+  components: {YsLinkItem}
 }
 </script>
 <style lang="stylus">
 .ya-left-nav-group
-  padding 1rem 0 3rem 
+  padding 1rem 0 2rem 
   border-bottom 1px solid var(--color-border)
   &:last-child
     border none
-.ys-link-item
-  width 100%
-  padding .5rem 0 .5rem 2rem
-  display block
 </style>

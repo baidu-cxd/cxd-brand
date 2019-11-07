@@ -5,7 +5,7 @@
     <!--容器-->
     <div class="ys-content-full-page">
       <!--左侧导航栏-->
-      <YsLeftNav :list='guideIndex' url='/guide/'/>
+      <YsLeftNav :list='guideIndex' url='/guide'/>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   computed: {
     guideIndex() {
       const path = this.$route.fullPath
-      const nowPage = '/' + path.split('/')[2]
+      const nowPage ='/' + path.split('/')[2] + '/'
       let arr = []
       guideIndex.forEach(element => {
          if (element.type == 'index') {

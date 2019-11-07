@@ -5,11 +5,11 @@
     <!--页面 header 主体-->
     <div class="header-main-content">
       <!--logo-->
-      <img  class="logo" src="@/assets/img/logo.svg" alt="">
+      <router-link to='/index'><img  class="logo" src="@/assets/img/logo.svg" alt=""></router-link>
       <!--导航-->
       <div class="nav">
         <router-link to='/index'>首 页</router-link>
-        <router-link to='/guide'>规 范</router-link>
+        <router-link to='/guide/brand'>规 范</router-link>
         <router-link to='/resource'>资 源</router-link>
       </div>
     </div>

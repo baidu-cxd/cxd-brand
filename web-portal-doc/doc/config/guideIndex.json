@@ -1,17 +1,22 @@
 [
   {
     "type": "index",
-    "url": "",
+    "url": "/",
     "children": {
       "brand": "百度云品牌规范",
-      "portal": "百度云portal端设计规范"
+      "resource": "控制台设计语言"
     } 
   },
   {
     "type": "inner",
-    "url": "/brand",
+    "url": "/brand/",
     "children": {
-      "color": "颜 色"
+      "color": "色彩规范",
+      "visual-item": "基础元素",
+      "icon": "图标和图形",
+      "picture": "场景插画",
+      "animation": "动效设计",
+      "web": "网页端设计"
     } 
   }
 ]

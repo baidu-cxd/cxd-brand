@@ -21,7 +21,7 @@ export default new Router({
       component: Index      
     },
     {
-      path: '/guide/:id?',
+      path: '/guide/:group?/:id?',
       name: 'guide',
       component: Guide,
     },
