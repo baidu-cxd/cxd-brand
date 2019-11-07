@@ -19,13 +19,13 @@
   height 100%
   overflow scroll
   .guide-title
-    padding 6rem 0 3rem 4rem
+    padding 6rem 3rem 3rem 3rem
     background-color var(--color-base-2)
     overflow hidden
     h1
       color var(--color-bg-base)
   .main-content
-    padding 2rem 0 3rem 4rem
+    padding 2rem 3rem 3rem 3rem
     min-height 800px
     overflow hidden
 </style>
