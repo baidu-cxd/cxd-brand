@@ -15,8 +15,8 @@ export default {
 </script>
 <style lang="stylus">
 .ys-left-nav
-  position absolute
-  top 0
+  position fixed
+  top $header-height
   left 0
   z-index 10
   padding-top 1rem

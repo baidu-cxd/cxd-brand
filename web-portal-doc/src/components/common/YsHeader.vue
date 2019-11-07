@@ -56,7 +56,7 @@ $logo-height = 18px
       &.router-link-active:after
         content ''
         display block
-        background-color var(--color-base)
+        background-color var(--color-border)
         width 100%
         height 2px
         position relative

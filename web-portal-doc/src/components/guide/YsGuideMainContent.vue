@@ -15,7 +15,9 @@
 <style lang="stylus">
 .ys-guide-main-content
   margin-left $left-nav
-  margin-right $right-fix-width 
+  margin-right $right-fix-width - 16px
+  height 100%
+  overflow scroll
   .guide-title
     padding 6rem 0 3rem 4rem
     background-color var(--color-base-2)
@@ -24,10 +26,12 @@
       color var(--color-bg-base)
   .main-content
     padding 2rem 0 3rem 4rem
+    min-height 800px
+    overflow hidden
 </style>
 
 <script>
-import rightFix from '@doc/code-page/rightFix.vue'
+import FixComponents from '@doc/code-page/FixComponents.vue'
 import guideIndex from '@doc/config/guideIndex.json'
 export default {
   data(){
@@ -35,7 +39,7 @@ export default {
       currentComponent: null
     }
   },
-  components:{rightFix},
+  components:{FixComponents},
   created() {
     this.routeTest()   
   },

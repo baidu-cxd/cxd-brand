@@ -24,7 +24,7 @@
     "url": "/components/",
     "children": {
       "layout": "布局",
-      "right-fix": { "text" : "右侧组件" , "component": "rightFix"},
+      "fix": { "text" : "悬浮组件" , "component": "FixComponents"},
       "token": "设计变量"
     } 
   }
