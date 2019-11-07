@@ -1,14 +1,15 @@
 // 样式变量
 :root
-  --color-brand: #2468f2
-  --color-base: #191C3D
-  --color-bg-light: #f6f8fb
-  --color-bg-light-2: #e5e9f0
-  --color-bg-light-3: #cad0db
-  --color-bg-base: #fff
-  --color-bg-brand: #2468f2
-  --color-border: #ebebeb
-  --shadow: 0 0px 10px rgba(0,0,0,.08)
+  --color-brand: #2468f2 //前景用品牌主色-蓝
+  --color-base: #191C3D  //背景用品牌主色-黑
+  --color-base-2: #454E6F //背景用品牌主色-黑-减弱
+  --color-bg-light: #f6f8fb //背景用品牌主色-白
+  --color-bg-light-2: #e5e9f0 //背景用品牌主色-白-加深
+  --color-bg-light-3: #cad0db //背景用品牌主色-白-加深-2
+  --color-bg-base: #fff //纯白色
+  --color-bg-brand: #2468f2 //背景用品牌主色-蓝
+  --color-border: var(--color-bg-light-3) //边框用色
+  --shadow: 0 0px 10px rgba(0,0,0,.08) //阴影
 // 样式引用
 @import './layout.styl' 
 // reset
@@ -23,8 +24,12 @@ h1, h2, h3, h4, h5, p, a, span, div
   -webkit-font-smoothing: antialiased; 
   font-weight normal
   line-height 1.5
+  margin 0
+  color var(--color-base)
 div, a
   box-sizing border-box
 a
   text-decoration none
   font-size $normal-text
+h1
+  font-size 2.5rem

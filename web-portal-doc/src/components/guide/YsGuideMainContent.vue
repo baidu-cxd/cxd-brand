@@ -1,17 +1,31 @@
 <template>
   <div class="ys-guide-main-content">
-    <div class="title">
-      {{$store.state.pageData.text || $store.state.pageData}}
+    <div class="guide-title">
+      <h1>
+        {{$store.state.pageData.text || $store.state.pageData}}
+      </h1>
     </div>
-    <div class="md" v-if="isMarkDown()">缺少 markdown 文件</div>
-    <component v-bind:is="currentComponent" v-else></component>
+    <div class="main-content" v-if="isMarkDown()">缺少 markdown 文件</div>
+    <div class="main-content" v-else>
+      <component v-bind:is="currentComponent"></component>
+    </div>
   </div>
 </template>
+
 <style lang="stylus">
 .ys-guide-main-content
   margin-left $left-nav
   margin-right $right-fix-width 
+  .guide-title
+    padding 6rem 0 3rem 4rem
+    background-color var(--color-base-2)
+    overflow hidden
+    h1
+      color var(--color-bg-base)
+  .main-content
+    padding 2rem 0 3rem 4rem
 </style>
+
 <script>
 import rightFix from '@doc/code-page/rightFix.vue'
 import guideIndex from '@doc/config/guideIndex.json'
@@ -61,7 +75,3 @@ function findePageDataInJson(path, guideIndex){
    return dataPage
 }
 </script>
-<style lang="stylus">
-.ys-guide-main-content
-  padding 2rem
-</style>

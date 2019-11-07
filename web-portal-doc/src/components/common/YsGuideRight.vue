@@ -8,5 +8,6 @@
   right 0
   top 0
   height 100%
-  background-color var(--color-bg-light-2)
+  background-color var(--color-bg-light)
+  border-left 1px solid var(--color-border)
 </style>

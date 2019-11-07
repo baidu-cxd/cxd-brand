@@ -18,5 +18,10 @@ export default {
   position absolute
   top 0
   left 0
+  z-index 10
   padding-top 1rem
+  width $left-nav
+  height 100%
+  background-color var(--color-bg-light)
+  border-right 1px solid var(--color-bg-light-3)
 </style>
