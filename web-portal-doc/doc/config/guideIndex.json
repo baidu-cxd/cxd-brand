@@ -3,14 +3,15 @@
     "type": "index",
     "url": "/",
     "children": {
-      "brand": "百度云品牌规范",
-      "components": "云设-组件库"
+      "brand": "智能云品牌规范",
+      "components": "云设：智能云组件库"
     } 
   },
   {
     "type": "inner",
     "url": "/brand/",
     "children": {
+      "base": "设计理念",
       "color": "色彩规范",
       "visual-item": "基础元素",
       "icon": "图标和图形",
@@ -23,9 +24,10 @@
     "type": "inner",
     "url": "/components/",
     "children": {
+      "token": "设计变量",
       "layout": "布局",
-      "fix": { "text" : "悬浮组件" , "component": "FixComponents"},
-      "token": "设计变量"
+      "form": { "text" : "表单组件" , "component": "FormComponents"},
+      "fix": { "text" : "悬浮组件" , "component": "FixComponents"}
     } 
   }
 ]

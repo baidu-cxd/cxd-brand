@@ -1,0 +1,58 @@
+// 标记发射器
+.ys-tip
+  position relative
+  border 1px solid transparent
+  transition $ani
+  &:hover 
+    border 1px solid var(--color-base-2)
+  &:hover:after
+    display block
+    opacity 1
+  &:after
+    opacity 0
+    transition $ani
+    content '缺少文字'
+    display none
+    position absolute
+    top 0
+    left 50%
+    transform translate(-50%, -120%)
+    color var(--color-bg-base)
+    background-color var(--color-bg-brand)
+    font-size (13/16)rem
+    padding .4rem
+    width 100%
+    max-width 120px
+    text-align center
+    border-radius 1px
+    box-sizing border-box
+// hover-border
+.ys-hover-border
+  transition $ani
+  border 1px solid transparent
+  &:hover
+    border 1px solid var(--color-border-2)
+// 测试按钮
+.ys-test-buttons
+  margin 2rem 0 -1rem
+  height 2rem
+.ys-test-button
+  transition $ani
+  font-size .85rem
+  color var(--color-base-2)
+  float left
+  height 2rem
+  line-height 1rem
+  padding .5rem .85rem
+  border 1px solid var(--color-border)
+  margin-right -1px
+  position relative
+  &:hover
+    cursor pointer
+    border 1px solid var(--color-border-2)
+    z-index 2
+  &.active
+    background-color var(--color-base-2)
+    border 1px solid var(--color-base-2)
+    z-index 2
+    color var(--color-bg-base)

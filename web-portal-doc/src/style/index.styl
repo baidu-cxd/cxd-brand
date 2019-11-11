@@ -2,36 +2,29 @@
 :root
   --color-brand: #2468f2 //前景用品牌主色-蓝
   --color-base: #191C3D  //背景用品牌主色-黑
-  --color-base-2: #454E6F //背景用品牌主色-黑-减弱
+  --color-base-2: #474964 //背景用品牌主色-黑-减弱
+  --color-base-3: #717489 //背景用品牌主色-黑-减弱-2
+  --color-base-4: #A4A5AE //背景用品牌主色-黑-减弱-3
   --color-bg-light: #f6f8fb //背景用品牌主色-白
   --color-bg-light-2: #e5e9f0 //背景用品牌主色-白-加深
-  --color-bg-light-3: #cad0db //背景用品牌主色-白-加深-2
+  --color-bg-light-3: #D4DAE6 //背景用品牌主色-白-加深-3
+  --color-bg-light-4: #cad0db //背景用品牌主色-白-加深-4
   --color-bg-base: #fff //纯白色
   --color-bg-brand: #2468f2 //背景用品牌主色-蓝
   --color-border: var(--color-bg-light-3) //边框用色
-  --shadow: 0 0px 10px rgba(0,0,0,.08) //阴影
+  --color-border-2: var(--color-base-3) //边框用色
+  --color-warn: #EA0101
+  --color-warn-0point1: rgba(234,1,1,.1)
 // 样式引用
 @import './layout.styl' 
+@import './text.styl'
+@import './utils.styl'
+@import './animation.styl'
 // reset
 html
   font-size 16px
 html, body
   padding 0
   margin 0
-h1, h2, h3, h4, h5, p, a, span, div 
-  font-family: Avenir, "PingFang SC", "SF Pro SC","SF Pro Text","Helvetica Neue",  Helvetica,  Roboto, 'Arial','microsoft yahei ui',"Microsoft YaHei",SimSun, sans-serif;
-  -moz-osx-font-smoothing: grayscale;  
-  -webkit-font-smoothing: antialiased; 
-  font-weight normal
-  line-height 1.5
-  margin 0
-  color var(--color-base)
 div, a
   box-sizing border-box
-a
-  text-decoration none
-  font-size $normal-text
-h1, h2, h3, h4, h5, h6, p
-  max-width $max-width
-h1
-  font-size 2.5rem

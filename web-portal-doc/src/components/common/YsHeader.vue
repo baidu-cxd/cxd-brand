@@ -39,7 +39,7 @@ $logo-height = 18px
   .header-main-content
     height $header-height
     background-color var(--color-bg-base)
-    box-shadow var(--shadow)
+    box-shadow $shadow
   img.logo
     height $logo-height
     margin (($header-height - $logo-height)/2) 2rem

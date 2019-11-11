@@ -23,5 +23,5 @@ export default {
   width $left-nav
   height 100%
   background-color var(--color-bg-light)
-  border-right 1px solid var(--color-bg-light-3)
+  border-right 1px solid var(--color-border)
 </style>
