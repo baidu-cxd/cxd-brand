@@ -1,5 +1,5 @@
 <template>
-  <div :class="['ys-input',data.state]" v-if="data.type=='text'">
+  <div :class="['ys-input',data.state]" v-if="data.type == 'text'">
     <p class="label">{{data.label}}</p>
     <img src="@/assets/icon/must-start.svg" alt="" v-if="data.isMust">
     <input :type="data.type" :placeholder="data.placeHolder">
@@ -54,7 +54,7 @@ export default {
     color var(--color-base-2)
     font-size (13/16)rem
     &:hover
-      box-shadow 0 0 0 3px var(--color-bg-light-2)
+      box-shadow 0 0 0 2px var(--color-bg-light-2)
     &:focus
       border 1px solid var(--color-border-2)
       box-shadow 0 0 0 3px var(--color-bg-light-2)
@@ -72,4 +72,7 @@ export default {
     font-size .085rem   
     color var(--color-warn)
     margin .25rem 0 0 0
+    position absolute
+    bottom -1.5rem
+    opacity 1
 </style>
