@@ -5,7 +5,7 @@
         {{$store.state.pageData.text || $store.state.pageData}}
       </h2>
     </div>
-    <div class="main-content" v-if="isMarkDown()">缺少 markdown 文件</div>
+    <div class="main-content" v-if="isMarkDown()"><MdRender/></div>
     <div class="main-content" v-else>
       <component v-bind:is="currentComponent"></component>
     </div>
@@ -32,13 +32,14 @@
 import FixComponents from '@doc/code-page/FixComponents.vue'
 import FormComponents from '@doc/code-page/FormComponents.vue'
 import guideIndex from '@doc/config/guideIndex.json'
+import MdRender from '@/components/base/MdRender.vue'
 export default {
   data(){
     return {
       currentComponent: null
     }
   },
-  components:{FixComponents, FormComponents},
+  components:{FixComponents, FormComponents, MdRender},
   created() {
     this.routeTest()   
   },
