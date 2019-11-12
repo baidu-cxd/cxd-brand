@@ -5,7 +5,7 @@
         {{$store.state.pageData.text || $store.state.pageData}}
       </h2>
     </div>
-    <div class="main-content" v-if="isMarkDown()"><MdRender/></div>
+    <div class="main-content" v-if="isMarkDown()"><MdRender :key="$route.path"/></div>
     <div class="main-content" v-else>
       <component v-bind:is="currentComponent"></component>
     </div>

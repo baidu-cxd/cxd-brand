@@ -3,6 +3,16 @@ function resolve (dir) {
     return path.join(__dirname, dir)
 }
 module.exports = {
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.md$/,
+          loader: 'raw-loader'
+        }
+      ]
+    }
+  },
   css: {
     loaderOptions: {
       stylus: {
