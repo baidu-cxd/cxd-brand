@@ -54,7 +54,7 @@ export default {
     color var(--color-base-2)
     font-size (13/16)rem
     &:hover
-      box-shadow 0 0 0 2px var(--color-bg-light-2)
+      box-shadow $outline
     &:focus
       border 1px solid var(--color-border-2)
       box-shadow 0 0 0 3px var(--color-bg-light-2)

@@ -1,6 +1,8 @@
 <template>
-  <div class="md-render" v-html="html">
-    {{html}}
+  <div class="md-render">
+    <div class="article" v-html="html">
+      {{html}}
+    </div>
   </div>
 </template>
 <script>

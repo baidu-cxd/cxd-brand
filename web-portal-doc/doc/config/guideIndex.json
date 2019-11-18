@@ -12,12 +12,10 @@
     "url": "/brand/",
     "children": {
       "base": "设计理念",
-      "color": "色彩规范",
       "visual-item": "基础元素",
-      "icon": "图标和图形",
-      "picture": "场景插画",
-      "animation": "动效设计",
-      "web": "网页端设计"
+      "icon": "图标图形",
+      "animation": "动画交互",
+      "web": "网页设计"
     } 
   },
   {

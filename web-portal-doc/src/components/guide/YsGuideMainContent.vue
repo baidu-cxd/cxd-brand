@@ -18,6 +18,7 @@
   margin-right $right-fix-width - 16px
   height 100%
   overflow-y scroll
+  padding-bottom 6rem
   .guide-title
     padding 6rem 4rem 4rem 4rem
     background-color var(--color-base-2)

@@ -21,6 +21,15 @@
         <YsInput :data='input1'/>
       </div>
     </div>
+    <h3>按钮: button</h3>
+    <div class="form-show-box button">
+      <div class="button-content">
+        <YsButton/>
+      </div>
+      <div class="button-content">
+        <YsButton type='outline'/>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -56,4 +65,8 @@ export default {
     padding 3rem
     .input-content
       width 20rem
+    &.button
+      height 13.5rem
+      .button-content
+        margin-bottom 1.5rem
 </style>
