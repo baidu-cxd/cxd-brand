@@ -1,4 +1,5 @@
 import ScrollListener from '@/components/base/ScrollListener.vue' 
+import Lottie from '@/components/base/Lottie.vue' 
 import YsHeader from '@/components/common/YsHeader.vue' 
 import YsLeftNav from '@/components/common/YsLeftNav.vue' 
 import YsGuideRight from '@/components/common/YsGuideRight.vue'
@@ -7,6 +8,7 @@ import YsInput from '@/components/ys-design-system/YsInput.vue'
 import YsButton from '@/components/ys-design-system/YsButton.vue'
 export default (Vue)=>{
   Vue.component("ScrollListener", ScrollListener)
+  Vue.component("Lottie", Lottie)
   Vue.component("YsHeader", YsHeader)
   Vue.component("YsLeftNav", YsLeftNav)
   Vue.component("YsGuideRight", YsGuideRight)
