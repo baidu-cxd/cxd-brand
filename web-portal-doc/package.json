@@ -18,7 +18,7 @@
     "axios": "^0.19.0",
     "lottie-web": "^5.5.9",
     "markdown-it": "^10.0.0",
-    "qs": "^6.9.0",
+    "qs": "^6.9.7",
     "raw-loader": "^3.1.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
